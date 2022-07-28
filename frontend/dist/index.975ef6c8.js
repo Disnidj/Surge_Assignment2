@@ -24629,7 +24629,7 @@ function App() {
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/UserProfile",
+                        path: "/UserProfile/:id",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userProfileDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "src/App.js",
@@ -24677,7 +24677,7 @@ function App() {
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/ViewNote",
+                        path: "/ViewNote/:id",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _viewNoteDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "src/App.js",
@@ -24685,7 +24685,7 @@ function App() {
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/UpdateNote",
+                        path: "/UpdateNote/:id",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _updateNoteDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "src/App.js",
@@ -51732,7 +51732,7 @@ class ViewNote extends (0, _react.Component) {
         };
     }
     //retrieve special data
-    retrievePosts() {
+    retrieveNotes() {
         (0, _axiosDefault.default).get("http://localhost:8000/allNotes").then((res)=>{
             if (res.data.success) {
                 this.setState({

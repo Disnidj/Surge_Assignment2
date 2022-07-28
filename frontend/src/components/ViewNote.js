@@ -22,7 +22,7 @@ export default class ViewNote extends Component {
       
   //retrieve special data
   
-    retrievePosts(){
+    retrieveNotes(){
       axios.get("http://localhost:8000/allNotes").then(res=>{
         if(res.data.success){
           this.setState({

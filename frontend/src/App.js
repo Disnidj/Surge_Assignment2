@@ -32,14 +32,14 @@ export default function App() {
                 <Route    path = "/AdminLogin" element = {<AdminLogin/>}/>              
                 <Route    path = "/Viewallusers" element = {<Viewallusers/>}/>
                 <Route    path="/AdminHome" element={<AdminHome/>}/>
-                <Route    path="/UserProfile" element={<UserProfile/>}/>
+                <Route    path="/UserProfile/:id" element={<UserProfile/>}/>
                 <Route    path="/AdminCreateUser" element={<AdminCreateUser/>}/>
                 <Route    path="/MailPage" element={<MailPage/>}/>
                 <Route    path="/StudentHome" element={<StudentHome/>}/>
                 <Route    path="/Notes" element={<Notes/>}/>
                 <Route    path="/addNote" element={<AddNote/>}/>
-                <Route    path="/ViewNote" element={<ViewNote/>}/>
-                <Route    path="/UpdateNote" element={<UpdateNote/>}/>
+                <Route    path="/ViewNote/:id" element={<ViewNote/>}/>
+                <Route    path="/UpdateNote/:id" element={<UpdateNote/>}/>
 
                 
 
